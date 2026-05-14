@@ -16,7 +16,7 @@ A beginner-friendly Python automation project that automatically organizes files
 - Python
 - pathlib
 - shutil
-- Git & GitHub
+
 
 ## Supported File Types
 
