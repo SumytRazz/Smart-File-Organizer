@@ -4,6 +4,3 @@ __pycache__/
 
 # Test folder
 test_files/
-
-# Virtual environment (for later)
-venv/
