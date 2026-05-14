@@ -9,17 +9,23 @@ FILE_CATEGORIES = {
     ".mp4": "Videos"
 }
 
+
+def get_category(extension):
+
+    return FILE_CATEGORIES.get(extension, "Others")
+
+
 test_folder = Path("test_files")
 
 for item in test_folder.iterdir():
 
     if item.is_file():
 
-        if item.name == "main.py":
+        if item.name == "organizer.py":
             continue
 
         extension = item.suffix.lower()
-        category = FILE_CATEGORIES.get(extension, "Others")
+        category = get_category(extension)
         folder_path = test_folder / category
         folder_path.mkdir(exist_ok=True)
         destination = folder_path / item.name
